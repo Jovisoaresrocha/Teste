@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  
+}
+.conteudo{
+  /* width: 100vw; */
+  /* height: 100vh; */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Anonymous Pro', monospace;
+  color: #2D2E31;
+  grid-template-columns: 1fr;
+}
+
+.cima {
+  display: grid;
+  margin: 50px;
+  max-width: 1240px;
+  min-width: 1000px;
+  grid-template-areas:
+    "um quatro seis"
+    "dois cinco seis"
+    "tres cinco seis";
+  border: 1px solid #2D2E31;
+}
+.quadrado{
+  max-width: 412px;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.um {
+  grid-area: um;
+  border-bottom: 1px  #2D2E31 solid;
+  height: 138px;
+  gap: 8px;
+}
+
+.data-nascimento{
+ color: #6B6B6B;
+ font-weight: bold;
+ font-size: 16px;
+}
+/* ===========================*/ 
+.dois {
+  grid-area: dois;
+  border-bottom: 1px #2D2E31 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frase-sobre{
+  font-size: 32px;
+  font-weight: 400;
+  color: #2D2E31;
+}
+/* ===========================*/ 
+.tres {
+  grid-area: tres;
+  color: #393939;
+
+}
+/* ===========================*/ 
+.quatro {
+  grid-area: quatro;
+  border: 1px solid #2D2E31;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+} 
+
+.quatro h2{
+  font-size: 40px;
+text-align: center;
+}
+/* ===========================*/ 
+.cinco {
+  grid-area: cinco;
+  border: 1px solid #2D2E31;
+  border-bottom: 1px solid white;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 315px;
+  justify-content: center;
+}
+.titulo-cinco{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #393939;
+  align-items: center;
+  text-align: center;
+  gap: 8px
+  ;
+}
+.titulo-cinco h3{
+  color: #2D2E31;
+  font-size: 24px;
+}
+/* ===========================*/ 
+.seis{
+  grid-area: seis;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+/* ===========================*/ 
+
+.baixo{
+  display: grid;
+  width: 1240px;
+  border: 1px solid #2D2E31;
+  margin-bottom: 50px;
+  grid-template-areas:
+  "browser browser"
+  "menu conteudo-curriculo";
+  grid-template-columns: 3fr 9fr;
+} 
+
+.browser{
+  grid-area: browser;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 25px;
+  border-bottom: 1px solid #2D2E31;
+}
+
+.menu{
+  padding: 50px;
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #2D2E31;
+}
+
+.cargos{
+  line-height: 130%;
+}
+
+.icones-browser{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.titulo-curriculo{
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  align-items: flex-start;
+}
+
+.conteudo-titulo-curriculo{
+  padding: 2px 8px;
+  display: inline-block;
+  color: #F3F3F3;
+  background-color: #2D2E31;
+}
+
+.niveis-de-conhecimento{
+  display: flex;
+  flex-direction: column;
+gap: 16px;
+}
+
+.conhecimento{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.conhecimento-titulo{
+  font-size: 18px;
+  font-weight: bold;
+  color: #393939;
+}
+.conhecimento-nivel{
+  font-size: 14px;
+  padding-top: 2px;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+
+.negrito{
+  font-weight: 700;
+  font-size: 18px;
+}
+.conteudo-curriculo{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navegacao{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.botao-nevagacao{
+  color: #393939;
+}
+
+.botao{
+  padding: 8px 16px;
+  color: #F3F3F3;
+  background-color: #2D2E31;
+}
+
+.botao:hover{
+  background-color: #6B6B6B;
+}
+
+.titulo-sobremim{
+font-size: 32px;
+font-weight: bold;
+}
+.paragrafo-sobremim{
+  max-width: 550px;
+}
+
+.cursos-feitos{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 8px;
+}
+.curso{
+  width: 350px;
+  line-height: 140%;
+}
+
+.social-midia{
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  align-items: center;
+}
+.sobre-mim{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #2D2E31;
+}
+
+.educacao{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+}
+.sobre-mim-e-educacao{
+  display: flex;
+  flex-direction: column;
+}
